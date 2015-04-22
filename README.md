@@ -1,2 +1,4 @@
-# rwd_demo
-Responsive Web Design demo
+# A brief demo of Responsive Web Design
+
+
+
