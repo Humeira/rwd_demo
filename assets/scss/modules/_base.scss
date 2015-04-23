@@ -1,0 +1,23 @@
+/*html/:root element styles*/
+
+html,
+:root {
+	font-family: $font-serif;
+	font-size: $base;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+
+	//colour
+
+	background: #fff;
+	color: #000;
+}
+
+strong{
+	font-weight: 700 !important;
+}
+
+
+em{
+	font-style: italic !important;
+}

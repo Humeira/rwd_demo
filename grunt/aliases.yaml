@@ -1,0 +1,16 @@
+default:
+  description: 'Default (production) build'
+  tasks:
+    - prod
+dev:
+	- 'watch'
+	
+build:
+  description: 'Development build'
+  tasks:
+    - 'concurrent:devFirst'
+
+prod:
+  description: 'Production build'
+  tasks:
+    - 'concurrent:prodFirst'
