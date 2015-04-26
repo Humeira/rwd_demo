@@ -1,0 +1,268 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*Group colours */
+/*convert to rem */
+/*Percentage*/
+/*convert to rem with px fallback*/
+/*Retina Images */
+/*clearfix*/
+h1 {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1; }
+
+h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1; }
+
+h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1; }
+
+h4 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1; }
+
+small, .tiny {
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+strong {
+  font-weight: 700 !important; }
+
+em {
+  font-style: italic !important; }
+
+h1, h2, h3, h4 {
+  text-rendering: optimizeLegibility;
+  margin-bottom: 1.5px;
+  font-family: "", Helvetica, sans-serif;
+  font-weight: bold; }
+
+p, li {
+  font-size: 16px;
+  font-family: "", Georgia, serif;
+  line-height: 1.5;
+  margin-bottom: 1.5px; }
+
+/*remove browsers default*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  Display audio, canvas, and video elements as inline block elements. */
+audio, canvas, video {
+  display: inline-block; }
+
+/*  Prevent modern browsers from displaying audio without controls. */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*  Prevent img and video elements from spilling
+ *  outside of the page on smaller screens. */
+img, video {
+  max-width: 100%;
+  height: auto; }
+
+/*  Improve readability when focused and also mouse hovered in all browsers. */
+a:hover, a:active {
+  outline: 0; }
+
+/*Helper classes*/
+.p--b {
+  display: block; }
+
+/*margins*/
+.p--m {
+  margin-bottom: 1.5px; }
+
+/*no margin bottom*/
+.p--nm {
+  margin: 0; }
+
+.p--ul {
+  list-style-type: none; }
+
+/*float*/
+.f--l {
+  float: left; }
+
+.f--r {
+  float: right; }
+
+::selection {
+  background: blue;
+  text-shadow: none; }
+
+::-moz-selection {
+  background: blue;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1.5px 0;
+  padding: 0; }
+
+@-webkit-viewport {
+  width: device-width;
+  zoom: 1; }
+
+@-moz-viewport {
+  width: device-width;
+  zoom: 1; }
+
+@-ms-viewport {
+  width: device-width;
+  zoom: 1; }
+
+@-o-viewport {
+  width: device-width;
+  zoom: 1; }
+
+@viewport {
+  width: device-width;
+  zoom: 1; }
+
+/*clearfix*/
+.clearfix:before, .clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  padding: 1.25rem;
+  clear: both; }
+
+.header {
+  position: relative;
+  padding: 0 15px;
+  padding: 0 0.9375rem; }
+  .header .header__navigation {
+    float: left; }
+    .header .header__navigation ul {
+      list-style-type: none; }
+    .header .header__navigation li {
+      float: left;
+      margin-right: 15px;
+      margin-right: 0.9375rem;
+      font-family: "", Helvetica, sans-serif;
+      font-size: 19px;
+      font-size: 1.1875rem; }
+
+.big {
+  margin-top: 10px;
+  margin-top: 0.625rem;
+  background: red;
+  padding: 20px;
+  padding: 1.25rem; }
+  .big .big__content h1 {
+    font-family: "", Helvetica, sans-serif;
+    font-size: 36px;
+    font-size: 2.25rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 7px;
+    margin-bottom: 0.4375rem; }
+  .big .big__content p {
+    font-family: "", Georgia, serif;
+    font-size: 19px;
+    font-size: 1.1875rem; }
+
+.content .content__section {
+  padding: 20px;
+  padding: 1.25rem;
+  display: block;
+  float: left;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%; }
+  .content .content__section:last-child {
+    margin-right: 0; }
+  .content .content__section h1 {
+    font-family: "", Helvetica, sans-serif;
+    font-size: 36px;
+    font-size: 2.25rem;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 7px;
+    margin-bottom: 0.4375rem; }
+  .content .content__section p {
+    font-family: "", Georgia, serif;
+    font-size: 19px;
+    font-size: 1.1875rem; }
+  @media screen and (max-width: 768px) {
+    .content .content__section {
+      width: 50%;
+      margin-right: 0px;
+      margin-bottom: 10px;
+      margin-bottom: 0.625rem; }
+      .content .content__section:last-child {
+        display: block;
+        float: left;
+        margin-right: 2.3576515979%;
+        width: 100%; }
+        .content .content__section:last-child:last-child {
+          margin-right: 0; } }
+  @media screen and (max-width: 600px) {
+    .content .content__section {
+      display: block;
+      float: left;
+      margin-right: 2.3576515979%;
+      width: 100%; }
+      .content .content__section:last-child {
+        margin-right: 0; } }
+.content .content__section--first {
+  background: green; }
+.content .content__section--second {
+  background: blue; }
+.content .content__section--third {
+  background: yellow; }
